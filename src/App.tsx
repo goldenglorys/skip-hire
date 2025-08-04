@@ -15,9 +15,9 @@ const queryClient = new QueryClient({
 });
 
 function App() {
-  const { _isDark, setTheme } = useThemeStore();
+  const { setTheme } = useThemeStore();
 
-  // Initialize theme on app load
+  // Initialize theme on app load_isDark
   useEffect(() => {
     // Check for system preference if no stored preference
     const storedTheme = localStorage.getItem("theme-storage");
